@@ -1,0 +1,168 @@
+1
+Traceback (most recent call last):
+  File "C:\Users\BENCH\documents\visual studio 2017\Projects\doubanmovie\doubanmovie\SaveInDATABASE.py", line 92, in <module>
+    cursor.execute(sqlins)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'2,3439,8.1,"[\'后海大鲨鱼\', \'PK14\']","False")\' at line 17')
+
+
+           INSERT INTO MOVIES(
+           rating,
+           rank,
+           cover_url,
+           is_playable,
+           id,
+           types,
+           regions,
+           title,
+           url,
+           release_date,
+           actor_count,
+           vote_count,
+           score,
+           actors,
+           is_watched)
+           VALUES("['8.1', '40']",625,"https://img3.doubanio.com\/view\/subject\/l\/public\/s3597406.jpg","False",3537855,"['纪录片', '音乐']","['中国大陆']","爱噪音","https:\/\/movie.douban.com\/subject\/3537855\/",,2,3439,8.1,"['后海大鲨鱼', 'PK14']","False")
+         
+rating:['8.1', '40'] <class 'list'>
+rank:625 <class 'int'>
+cover_url:https://img3.doubanio.com\/view\/subject\/l\/public\/s3597406.jpg <class 'str'>
+is_playable:False <class 'bool'>
+id:3537855 <class 'str'>
+types:['纪录片', '音乐'] <class 'list'>
+regions:['中国大陆'] <class 'list'>
+title:爱噪音 <class 'str'>
+url:https:\/\/movie.douban.com\/subject\/3537855\/ <class 'str'>
+release_date: <class 'str'>
+actor_count:2 <class 'int'>
+vote_count:3439 <class 'int'>
+score:8.1 <class 'str'>
+actors:['后海大鲨鱼', 'PK14'] <class 'str'>
+is_watched:False <class 'bool'>
+2
+Traceback (most recent call last):
+  File "C:\Users\BENCH\documents\visual studio 2017\Projects\doubanmovie\doubanmovie\SaveInDATABASE.py", line 92, in <module>
+    cursor.execute(sqlins)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'0,1323,6.2,"[]","False")\' at line 17')
+
+
+           INSERT INTO MOVIES(
+           rating,
+           rank,
+           cover_url,
+           is_playable,
+           id,
+           types,
+           regions,
+           title,
+           url,
+           release_date,
+           actor_count,
+           vote_count,
+           score,
+           actors,
+           is_watched)
+           VALUES("['6.2', '35']",1738,"https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2352219001.jpg","False",1304621,"['动作']","['香港']","街坊差人","https:\/\/movie.douban.com\/subject\/1304621\/",,0,1323,6.2,"[]","False")
+         
+rating:['6.2', '35'] <class 'list'>
+rank:1738 <class 'int'>
+cover_url:https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p2352219001.jpg <class 'str'>
+is_playable:False <class 'bool'>
+id:1304621 <class 'str'>
+types:['动作'] <class 'list'>
+regions:['香港'] <class 'list'>
+title:街坊差人 <class 'str'>
+url:https:\/\/movie.douban.com\/subject\/1304621\/ <class 'str'>
+release_date: <class 'str'>
+actor_count:0 <class 'int'>
+vote_count:1323 <class 'int'>
+score:6.2 <class 'str'>
+actors:[] <class 'str'>
+is_watched:False <class 'bool'>
+3
+Traceback (most recent call last):
+  File "C:\Users\BENCH\documents\visual studio 2017\Projects\doubanmovie\doubanmovie\SaveInDATABASE.py", line 92, in <module>
+    cursor.execute(sqlins)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\Anaconda3\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'0,2139,5.5,"[]","False")\' at line 17')
+
+
+           INSERT INTO MOVIES(
+           rating,
+           rank,
+           cover_url,
+           is_playable,
+           id,
+           types,
+           regions,
+           title,
+           url,
+           release_date,
+           actor_count,
+           vote_count,
+           score,
+           actors,
+           is_watched)
+           VALUES("['5.5', '30']",3657,"https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p1842050844.jpg","False",10484016,"['喜剧']","['韩国']","배꼽","https:\/\/movie.douban.com\/subject\/10484016\/",,0,2139,5.5,"[]","False")
+         
+rating:['5.5', '30'] <class 'list'>
+rank:3657 <class 'int'>
+cover_url:https://img3.doubanio.com\/view\/photo\/s_ratio_poster\/public\/p1842050844.jpg <class 'str'>
+is_playable:False <class 'bool'>
+id:10484016 <class 'str'>
+types:['喜剧'] <class 'list'>
+regions:['韩国'] <class 'list'>
+title:배꼽 <class 'str'>
+url:https:\/\/movie.douban.com\/subject\/10484016\/ <class 'str'>
+release_date: <class 'str'>
+actor_count:0 <class 'int'>
+vote_count:2139 <class 'int'>
+score:5.5 <class 'str'>
+actors:[] <class 'str'>
+is_watched:False <class 'bool'>
