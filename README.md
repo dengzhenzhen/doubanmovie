@@ -1,1 +1,4 @@
 # doubanmovie
+doubanmovie将所有的链接保存在urllist中
+movieinfo从urllist读取链接，把获取到的东西保存在scores中
+saveindatabase把电影信息放进数据库
