@@ -7,7 +7,7 @@ import time
 main_url = 'https://www.douban.com'
 User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
 account = '374894000@qq.com'
-password = 'zhen060729'
+password = '********'
 
 #先不考虑验证码了
 class login_session(requests.Session):
